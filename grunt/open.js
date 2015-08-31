@@ -8,6 +8,9 @@ module.exports = function(grunt, config) {
             case 'darwin':
                 chrome = 'Google Chrome';
                 break;
+            case 'linux':
+                chrome = 'google-chrome';
+                break;
             default:
                 chrome = 'Google Chrome';
         }
@@ -15,14 +18,14 @@ module.exports = function(grunt, config) {
     };
     return {
         src: {
-            path: '<%= serve.host %>:<%= serve.src_port %>',
+            path: 'http://<%= serve.host %>:<%= serve.src_port %>',
             options: {
                 delay: 5
             },
             app: GetChromeName()
         },
         dist: {
-            path: '<%= serve.host %>:<%= serve.dist_port %>',
+            path: 'http://<%= serve.host %>:<%= serve.dist_port %>',
             options: {
                 delay: 500
             },
