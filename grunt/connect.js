@@ -2,14 +2,14 @@ module.exports =  function(grunt, config) {
     return {
         src: {
             options: {
-                port: "<%= serve.src_port %>",
+                port: "<%= serve.portSrc %>",
                 hostname: "<%= serve.host %>"
             }
         },
 
         dist: {
             options: {
-                port: "<%= serve.dist_port %>",
+                port: "<%= serve.portDist %>",
                 hostname: "<%= serve.host %>",
                 keepalive: true
             }

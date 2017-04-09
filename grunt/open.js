@@ -18,14 +18,14 @@ module.exports = function(grunt, config) {
     };
     return {
         src: {
-            path: 'http://<%= serve.host %>:<%= serve.src_port %>',
+            path: 'http://<%= serve.host %>:<%= serve.portSrc %>',
             options: {
                 delay: 5
             },
             app: GetChromeName()
         },
         dist: {
-            path: 'http://<%= serve.host %>:<%= serve.dist_port %>',
+            path: 'http://<%= serve.host %>:<%= serve.portDist %>',
             options: {
                 delay: 500
             },

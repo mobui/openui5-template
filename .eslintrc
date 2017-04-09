@@ -6,6 +6,7 @@
     "sap": true,
     "jQuery": true,
     "sciener": true,
+    "mobui": true,
     "module": true
   },
   "plugins": [

@@ -8,17 +8,17 @@ module.exports = function(grunt) {
 
     var gruntData = {
         project: {
-            prefix: "sciener/mobile"
+            prefix: "mobui/project"
         },
         dir: {
-            bower_components: 'bower_components',
+            bowerComponents: 'bower_components',
             src: 'webapp',
             dist: 'dist'
         },
         serve: {
             host: '127.0.0.1',
-            src_port: '8080',
-            dist_port: '8090'
+            portSrc: '8080',
+            portDist: '8090'
         }
     };
 
